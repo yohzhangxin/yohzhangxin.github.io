@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="算法面试,刷题,">
+  <meta name="keywords" content="机器学习,spark,大数据,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="栈和队列">
-<meta name="keywords" content="算法面试,刷题">
+<meta name="description" content="CS190.1X 第一周课程学习笔记系列笔记主要记录BerkeleyX:CS190.1x  课程的学习内容，内容主要来源是课程ppt和自己总结的知识点。 该课程一共有5次课程分别如下： week01 课程大纲和机器学习基础 week02 Apache Spark简介 week03 线性回归和分布式机器学习原则 week04 逻辑回归和点击率预测 week05 主成分分析和神经网络">
+<meta name="keywords" content="机器学习,spark,大数据">
 <meta property="og:type" content="article">
-<meta property="og:title" content="算法刷题">
-<meta property="og:url" content="https://yohzhangxin.github.io/2018/11/06/算法刷题/index.html">
+<meta property="og:title" content="week1 课程大纲和机器学习基础">
+<meta property="og:url" content="https://yohzhangxin.github.io/2018/12/27/week1-课程大纲和机器学习基础/index.html">
 <meta property="og:site_name" content="zhangxin">
-<meta property="og:description" content="栈和队列">
+<meta property="og:description" content="CS190.1X 第一周课程学习笔记系列笔记主要记录BerkeleyX:CS190.1x  课程的学习内容，内容主要来源是课程ppt和自己总结的知识点。 该课程一共有5次课程分别如下： week01 课程大纲和机器学习基础 week02 Apache Spark简介 week03 线性回归和分布式机器学习原则 week04 逻辑回归和点击率预测 week05 主成分分析和神经网络">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-06T07:55:20.667Z">
+<meta property="og:updated_time" content="2018-12-27T09:15:49.797Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="算法刷题">
-<meta name="twitter:description" content="栈和队列">
+<meta name="twitter:title" content="week1 课程大纲和机器学习基础">
+<meta name="twitter:description" content="CS190.1X 第一周课程学习笔记系列笔记主要记录BerkeleyX:CS190.1x  课程的学习内容，内容主要来源是课程ppt和自己总结的知识点。 该课程一共有5次课程分别如下： week01 课程大纲和机器学习基础 week02 Apache Spark简介 week03 线性回归和分布式机器学习原则 week04 逻辑回归和点击率预测 week05 主成分分析和神经网络">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://yohzhangxin.github.io/2018/11/06/算法刷题/">
+  <link rel="canonical" href="https://yohzhangxin.github.io/2018/12/27/week1-课程大纲和机器学习基础/">
 
 
 
 
 
-  <title>算法刷题 | zhangxin</title>
+  <title>week1 课程大纲和机器学习基础 | zhangxin</title>
   
 
 
@@ -263,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yohzhangxin.github.io/2018/11/06/算法刷题/">
+    <link itemprop="mainEntityOfPage" href="https://yohzhangxin.github.io/2018/12/27/week1-课程大纲和机器学习基础/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhang Xin">
@@ -280,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">算法刷题</h1>
+          <h1 class="post-title" itemprop="name headline">week1 课程大纲和机器学习基础</h1>
         
 
         <div class="post-meta">
@@ -292,8 +292,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-06T15:48:40+08:00">
-                2018-11-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-27T14:17:09+08:00">
+                2018-12-27
               </time>
             
 
@@ -315,8 +315,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Algorithm/" itemprop="url" rel="index">
-                    <span itemprop="name">Algorithm</span>
+                  <a href="/categories/CS190-1X/" itemprop="url" rel="index">
+                    <span itemprop="name">CS190.1X</span>
                   </a>
                 </span>
 
@@ -352,7 +352,58 @@
       
 
       
-        <h1 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h1>
+        <h1 id="CS190-1X-第一周课程学习笔记"><a href="#CS190-1X-第一周课程学习笔记" class="headerlink" title="CS190.1X 第一周课程学习笔记"></a><a href="https://courses.edx.org/courses/BerkeleyX/CS190.1x/1T2015/course/" target="_blank" rel="noopener">CS190.1X</a> 第一周课程学习笔记</h1><pre><code>系列笔记主要记录BerkeleyX:CS190.1x 
+课程的学习内容，内容主要来源是课程ppt和自己总结的知识点。
+该课程一共有5次课程分别如下：
+week01 课程大纲和机器学习基础
+week02 Apache Spark简介
+week03 线性回归和分布式机器学习原则
+week04 逻辑回归和点击率预测
+week05 主成分分析和神经网络
+</code></pre><a id="more"></a>
+<h2 id="课程概览"><a href="#课程概览" class="headerlink" title="课程概览"></a>课程概览</h2><ul>
+<li>目前可行各业的数据量急速的增加</li>
+<li>分布式簇也变得非常的普遍</li>
+<li>利用成熟的方法来处理普遍的问题，例如：分类，回归，聚类，协同过滤等</li>
+<li>机器学习的应用也已经随处可见，例如：个人推荐，语言识别，人脸识别，欺诈检测等</li>
+<li>面临的挑战：可伸缩性。传统的机器学习方法不在适用于现在的数据集，因为数据的增长已经超过了摩尔定律（Moore’s Law）</li>
+<li>因为本课程的学习目的如下：<br>[图片week01-0]<h2 id="如何处理大量的数据"><a href="#如何处理大量的数据" class="headerlink" title="如何处理大量的数据"></a>如何处理大量的数据</h2><pre><code> 对于大量的数据，首先考虑到的可以是增加更多的硬件来存储和处理数据，那么如何来扩展更多的硬件呢，通常有两种方式
+方式一：Scale-up，即使用一台硬盘更大的机器（通常称为：纵向扩展），显而易见，这样的处理方式有如下的优缺点：
+</code></pre><ul>
+<li>对于中等规模的数据而言，这样的处理方式显然是比较快速的；</li>
+<li>但是需要昂贵的和专业的硬件</li>
+<li>这样最终也会造成瓶颈（Eventually hit a wall）[插入图片 week01-1]<pre><code>方式二：Scale-out,即采用分布式的方式（通常称为横向扩展），对于这样处理方式，它具有的有缺如下：
+</code></pre></li>
+<li>通用硬件，按比例处理大量数据。（Commodity hardware,scales to massive problems）</li>
+<li>但是：需要处理多台机器之间的网络通信，</li>
+<li>以及需要添加复杂的软件来管理多台机器。<pre><code>为了更好的解决，上面这些问题，我们可以使用一款通用软件，即：Apache spark
+</code></pre><h2 id="什么是Apache-Spark"><a href="#什么是Apache-Spark" class="headerlink" title="什么是Apache Spark"></a>什么是Apache Spark</h2>一款通用的，开源的分簇计算引擎，它具有如下优点：<br>[图片week01-3]<h2 id="什么是机器学习"><a href="#什么是机器学习" class="headerlink" title="什么是机器学习"></a>什么是机器学习</h2>本课程中给机器学习的定义是<blockquote>
+<p>一种构建和学习方法，这种方法通过数据学习和做出预测。（Constructing and studying methods that learn from and make<br>predictions on data）</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>常见应用<br>[插入图片 week01-4]</li>
+<li>术语<br>  Observations（观察资料）：用于学习或者预测的数据或者实体，例如：邮件<br>  Features（特征）：代表观察对象的一些属性，例如：长度，日期，关键字<br>  Labels（标签）：赋值给观察对象的值或者分类(Values / categories assigned to observations)，例如：垃圾邮件，非垃圾邮件<br>  Training and Test Data（训练和测试数据）</li>
+<li>机器学习的两种分类<br>  监督学习（Supervised learning）：观察对象具有Labels,例如：分类，回归等<br>  无监督学习（Unsupervised learning）:观察对象没有Labels，例如：聚类，降维等  <h2 id="典型的监督学习方法步骤"><a href="#典型的监督学习方法步骤" class="headerlink" title="典型的监督学习方法步骤"></a>典型的监督学习方法步骤</h2><pre><code>获得原始数据（各种类型的数据，可以是文字，可以是图片，也可以是声音）
+↓
+特征抽取（通常需要一些可以数值表示的特征，特征的抽取对于训练结果的好坏具有非常重要的地位）
+↓
+利用算法进行学习
+↓
+估计（Evaluation）（如果对于预测结果不满意，可以回到第二步重新抽取新的特征，再进行算法学习）
+↓
+预测
+</code></pre>[图片 week01-5]<h2 id="分类算法流程"><a href="#分类算法流程" class="headerlink" title="分类算法流程"></a>分类算法流程</h2><pre><code>通过观察训练数据给出的分离的标签（discrete labes），学习一个建立一个映射关系，例如：给定一批邮件数据，并对其进行垃圾邮件和非垃圾邮件的分类，通过学习这些数据，实现对邮件归类为垃圾邮件或者非垃圾邮件的目的。
+按照上一部分给出的步骤
+1）原始数据（这些数据由一系列被标记好的观察对象组成）
+2）特征抽取，对邮件进行向量化，如下图
+</code></pre>[图片Week01-6]<pre><code>3）监督学习：常用的方法主要包括：逻辑回归，SVM，决策树，随机森林等。
+4）评估得到的分类器（classifier）,有可能造成这样一个结果：对于训练数据可以完美的匹配，但是不能不能保证常规化，即对于训练集效果明显，但是对于测试却起不到明显的效果，这就是过拟合（overfit）,一个有效的思想来解决这个问题就是：Occam’s razor（即：如无必要，勿增实体）。如何进行评估呢，利用测试数据即可。
+</code></pre>[图片week01-7]<pre><code>5)预测
+</code></pre>   注意：对于数据集，我们通常分为测试数据集和训练数据集，通常在利用训练数据集对算法进行拟合，利用测试数据集来评估拟合出来算法的好坏，再利用新的数据进行预测。<h2 id="需要用到的线性代数知识"><a href="#需要用到的线性代数知识" class="headerlink" title="需要用到的线性代数知识"></a>需要用到的线性代数知识</h2>  需要用到比较简单的线性代数知识，对于例如：矩阵，向量，矩阵转置，矩阵求逆，矩阵加减这类简单的知识点就不一一列举了。</li>
+</ul>
+
       
     </div>
     
@@ -369,9 +420,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/算法面试/" rel="tag"># 算法面试</a>
+            <a href="/tags/机器学习/" rel="tag"># 机器学习</a>
           
-            <a href="/tags/刷题/" rel="tag"># 刷题</a>
+            <a href="/tags/spark/" rel="tag"># spark</a>
+          
+            <a href="/tags/大数据/" rel="tag"># 大数据</a>
           
         </div>
       
@@ -384,15 +437,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/12/06/爬虫学习实战/" rel="next" title="爬虫学习实战">
+                <i class="fa fa-chevron-left"></i> 爬虫学习实战
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/12/python3机器学习课程笔记-机器学习基础/" rel="prev" title="python3机器学习课程笔记:机器学习基础">
-                python3机器学习课程笔记:机器学习基础 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -524,7 +577,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#栈和队列"><span class="nav-number">1.</span> <span class="nav-text">栈和队列</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CS190-1X-第一周课程学习笔记"><span class="nav-number">1.</span> <span class="nav-text">CS190.1X 第一周课程学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#课程概览"><span class="nav-number">1.1.</span> <span class="nav-text">课程概览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何处理大量的数据"><span class="nav-number">1.2.</span> <span class="nav-text">如何处理大量的数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Apache-Spark"><span class="nav-number">1.3.</span> <span class="nav-text">什么是Apache Spark</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是机器学习"><span class="nav-number">1.4.</span> <span class="nav-text">什么是机器学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#典型的监督学习方法步骤"><span class="nav-number">1.5.</span> <span class="nav-text">典型的监督学习方法步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分类算法流程"><span class="nav-number">1.6.</span> <span class="nav-text">分类算法流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#需要用到的线性代数知识"><span class="nav-number">1.7.</span> <span class="nav-text">需要用到的线性代数知识</span></a></li></ol></li></ol></div>
             
 
           </div>
