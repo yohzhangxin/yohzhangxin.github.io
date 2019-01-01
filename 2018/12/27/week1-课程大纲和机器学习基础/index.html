@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="机器学习,spark,大数据,">
+  <meta name="keywords" content="spark,大数据,机器学习,">
 
 
 
@@ -80,14 +80,14 @@
 
 
 <meta name="description" content="CS190.1X 第一周课程学习笔记系列笔记主要记录BerkeleyX:CS190.1x  课程的学习内容，内容主要来源是课程ppt和自己总结的知识点。 该课程一共有5次课程分别如下： week01 课程大纲和机器学习基础 week02 Apache Spark简介 week03 线性回归和分布式机器学习原则 week04 逻辑回归和点击率预测 week05 主成分分析和神经网络">
-<meta name="keywords" content="机器学习,spark,大数据">
+<meta name="keywords" content="spark,大数据,机器学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="week1 课程大纲和机器学习基础">
 <meta property="og:url" content="https://yohzhangxin.github.io/2018/12/27/week1-课程大纲和机器学习基础/index.html">
 <meta property="og:site_name" content="zhangxin">
 <meta property="og:description" content="CS190.1X 第一周课程学习笔记系列笔记主要记录BerkeleyX:CS190.1x  课程的学习内容，内容主要来源是课程ppt和自己总结的知识点。 该课程一共有5次课程分别如下： week01 课程大纲和机器学习基础 week02 Apache Spark简介 week03 线性回归和分布式机器学习原则 week04 逻辑回归和点击率预测 week05 主成分分析和神经网络">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-27T09:15:49.797Z">
+<meta property="og:updated_time" content="2018-12-27T09:22:39.126Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="week1 课程大纲和机器学习基础">
 <meta name="twitter:description" content="CS190.1X 第一周课程学习笔记系列笔记主要记录BerkeleyX:CS190.1x  课程的学习内容，内容主要来源是课程ppt和自己总结的知识点。 该课程一共有5次课程分别如下： week01 课程大纲和机器学习基础 week02 Apache Spark简介 week03 线性回归和分布式机器学习原则 week04 逻辑回归和点击率预测 week05 主成分分析和神经网络">
@@ -372,8 +372,7 @@ week05 主成分分析和神经网络
 </code></pre><ul>
 <li>对于中等规模的数据而言，这样的处理方式显然是比较快速的；</li>
 <li>但是需要昂贵的和专业的硬件</li>
-<li>这样最终也会造成瓶颈（Eventually hit a wall）[插入图片 week01-1]<pre><code>方式二：Scale-out,即采用分布式的方式（通常称为横向扩展），对于这样处理方式，它具有的有缺如下：
-</code></pre></li>
+<li>这样最终也会造成瓶颈（Eventually hit a wall）[插入图片 week01-1]<br>方式二：Scale-out,即采用分布式的方式（通常称为横向扩展），对于这样处理方式，它具有的有缺如下：</li>
 <li>通用硬件，按比例处理大量数据。（Commodity hardware,scales to massive problems）</li>
 <li>但是：需要处理多台机器之间的网络通信，</li>
 <li>以及需要添加复杂的软件来管理多台机器。<pre><code>为了更好的解决，上面这些问题，我们可以使用一款通用软件，即：Apache spark
@@ -420,11 +419,11 @@ week05 主成分分析和神经网络
       
         <div class="post-tags">
           
-            <a href="/tags/机器学习/" rel="tag"># 机器学习</a>
-          
             <a href="/tags/spark/" rel="tag"># spark</a>
           
             <a href="/tags/大数据/" rel="tag"># 大数据</a>
+          
+            <a href="/tags/机器学习/" rel="tag"># 机器学习</a>
           
         </div>
       
@@ -446,6 +445,10 @@ week05 主成分分析和神经网络
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/01/2018年总结/" rel="prev" title="2018年总结">
+                2018年总结 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -522,7 +525,7 @@ week05 主成分分析和神经网络
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -533,7 +536,7 @@ week05 主成分分析和神经网络
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -544,7 +547,7 @@ week05 主成分分析和神经网络
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -597,7 +600,7 @@ week05 主成分分析和神经网络
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
